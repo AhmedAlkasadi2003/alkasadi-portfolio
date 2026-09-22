@@ -97,8 +97,8 @@ export default function Skills() {
               </div>
 
               <div className="pt-4 border-t border-slate-100 dark:border-slate-800/60 flex items-center justify-between text-[11px] font-mono text-slate-400">
-                <span>{cat.skills.length} Capabilities</span>
-                <span className="text-emerald-500 font-semibold">Production Caliber</span>
+                <span>{cat.skills.length} {t('skillsFooter.capabilities')}</span>
+                <span className="text-emerald-500 font-semibold">{t('skillsFooter.verified')}</span>
               </div>
             </div>
           ))}

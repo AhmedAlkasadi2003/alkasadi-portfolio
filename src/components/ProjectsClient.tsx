@@ -18,7 +18,7 @@ export default function ProjectsClient() {
       <div className="bg-slate-900 text-white py-20 mt-[-6rem] pt-[12rem] border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6">
           <span className="text-xs font-mono text-emerald-400 font-bold uppercase tracking-widest block mb-4">
-            PORTFOLIO &amp; ARCHITECTURES
+            SELECTED FRONT-END PROJECTS
           </span>
           <h1 className="text-4xl md:text-6xl font-display font-extrabold mb-6 tracking-tight">
             {t('nav.projects')}

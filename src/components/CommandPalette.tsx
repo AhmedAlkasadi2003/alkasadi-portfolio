@@ -3,7 +3,7 @@
 import { Command } from 'cmdk';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Home, User, Briefcase, Mail, FileText, Moon, Sun, Languages, Cpu, Layers } from 'lucide-react';
+import { Home, User, Briefcase, Mail, FileText, Moon, Sun, Languages, Layers } from 'lucide-react';
 import { useTranslation } from '@/context/LanguageContext';
 import { CASE_STUDIES } from '../data/portfolioData';
 
@@ -118,7 +118,7 @@ export default function CommandPalette() {
                 className="flex items-center justify-between px-3 py-2.5 rounded-xl cursor-pointer aria-selected:bg-slate-100 dark:aria-selected:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors text-sm"
               >
                 <div className="flex items-center gap-3">
-                  {study.slug.includes('cnc') ? <Cpu size={16} className="text-amber-500" /> : <Layers size={16} className="text-emerald-500" />}
+                  <Layers size={16} className="text-emerald-500" />
                   <span className="font-semibold">{isAr ? study.titleAr : study.title}</span>
                 </div>
                 <span className="text-[11px] font-mono text-slate-400">{isAr ? study.categoryAr : study.category}</span>

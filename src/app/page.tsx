@@ -41,22 +41,22 @@ export default function Home() {
       {/* 1. Hero Section */}
       <Hero />
       
-      {/* 2. Software + Hardware Differentiator Spotlight */}
+      {/* 2. Front-End Focus Spotlight */}
       <HardwareDifferentiator />
 
       {/* 3. Categorized Capabilities & Skills */}
       <Skills />
       
-      {/* 4. Enterprise Case Studies */}
+      {/* 4. Selected Projects */}
       <Projects />
 
-      {/* 5. Career Experience & Leadership */}
+      {/* 5. Professional Experience */}
       <Experience />
 
       {/* 6. Live GitHub Engineering Feed */}
       <GitHubActivity />
 
-      {/* 7. Contact & Architecture Consultation */}
+      {/* 7. Contact */}
       <Contact />
     </div>
   );

@@ -51,7 +51,7 @@ export default function AboutPage() {
         '@id': `${getCanonicalUrl('/about')}#webpage`,
         url: getCanonicalUrl('/about'),
         name: `About ${SITE_CONFIG.fullName}`,
-        description: `Detailed professional background, architectural tenets, and hardware engineering biography of ${SITE_CONFIG.fullName}.`,
+        description: `Detailed professional background, front-end development approach, education, and training for ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

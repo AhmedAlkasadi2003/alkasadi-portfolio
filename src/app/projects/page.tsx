@@ -3,8 +3,8 @@ import ProjectsClient from '../../components/ProjectsClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `Engineering Projects & Architecture Case Studies | ${SITE_CONFIG.shortName}`,
-  description: `Explore enterprise case studies by ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}): High-Throughput Laravel 12 & Nuxt 4 Ecosystems, .NET Core Commerce, Automated Multi-Tier CI/CD, and 3-Axis CNC Machining Machines.`,
+  title: `Front-End Projects & Platforms | ${SITE_CONFIG.shortName}`,
+  description: `Explore front-end projects by ${SITE_CONFIG.fullName}: enterprise platforms, dashboards, an e-commerce storefront, a movies app, and a hotel reservation website built with React, Next.js, and Tailwind CSS.`,
   alternates: {
     canonical: getCanonicalUrl('/projects'),
     languages: {
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `Engineering Projects & Case Studies | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-    description: `Deep architectural case studies spanning enterprise full-stack development and physical CNC hardware automation.`,
+    title: `Front-End Projects & Platforms | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
+    description: `Selected front-end platforms, dashboards, and web applications built with React, Next.js, and Tailwind CSS.`,
     url: getCanonicalUrl('/projects'),
     type: 'website',
     images: [
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `${SITE_CONFIG.fullName} Engineering Projects and Architecture Case Studies`,
+        alt: `${SITE_CONFIG.fullName} Front-End Projects and Platforms`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `Engineering Projects & Case Studies | ${SITE_CONFIG.shortName}`,
-    description: `Enterprise case studies in Laravel 12, Nuxt 4, Next.js, and CNC hardware automation.`,
+    description: `Selected front-end projects in React, Next.js, and Tailwind CSS.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },
@@ -46,8 +46,8 @@ export default function ProjectsPage() {
         '@type': 'CollectionPage',
         '@id': `${getCanonicalUrl('/projects')}#webpage`,
         url: getCanonicalUrl('/projects'),
-        name: 'Engineering Projects & Enterprise Case Studies',
-        description: `Portfolio of production systems, software platforms, and hardware builds created and led by ${SITE_CONFIG.fullName}.`,
+        name: 'Front-End Projects & Platforms',
+        description: `Portfolio of web applications, dashboards, and business platforms developed by ${SITE_CONFIG.fullName}.`,
         isPartOf: {
           '@id': `${SITE_URL}/#website`,
         },

@@ -36,8 +36,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: [
       study.title,
       ...study.technologies,
-      'Systems Architecture',
-      'Full-Stack Engineering',
+      'Front-End Development',
+      'React and Next.js',
       'Case Study',
       SITE_CONFIG.fullName,
       SITE_CONFIG.shortName,
@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       },
     },
     openGraph: {
-      title: `${study.title} — Systems Architecture Case Study`,
+      title: `${study.title} — Front-End Project`,
       description: study.summary,
       url: canonicalUrl,
       type: 'article',
       publishedTime: '2024-01-01T00:00:00.000Z',
       modifiedTime: '2025-01-01T00:00:00.000Z',
       authors: [SITE_URL],
-      section: 'Software Architecture & Engineering',
+      section: 'Front-End Development',
       tags: study.technologies,
       images: [
         {
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           width: 1200,
           height: 630,
           type: 'image/png',
-          alt: `${study.title} Architecture Case Study`,
+          alt: `${study.title} Front-End Project`,
         },
       ],
     },
@@ -122,7 +122,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
         '@type': 'SoftwareSourceCode',
         '@id': `${canonicalUrl}#software`,
         name: study.title,
-        programmingLanguage: study.technologies.filter(t => !t.includes('DevOps') && !t.includes('Hardware')),
+        programmingLanguage: study.technologies,
         abstract: study.summary,
         author: {
           '@id': `${SITE_URL}/#person`,

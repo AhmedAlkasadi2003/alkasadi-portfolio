@@ -21,7 +21,7 @@ export default function Experience() {
             {t('experience.title')}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg">
-            Front-end experience across React, Next.js, Tailwind CSS, and API development.
+            {t('experience.desc')}
           </p>
         </div>
 

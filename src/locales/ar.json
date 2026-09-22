@@ -37,7 +37,7 @@
       "desc": "HTML وCSS وJavaScript وReact.js وNext.js وTailwind CSS وBootstrap وjQuery."
     },
     "hardwarePillar": {
-      "title": "الحالة وسير عمل التطبيق",
+      "title": "أدوات التطبيق وسير العمل",
       "desc": "Redux وRedux Toolkit وReact Hooks وReact Router DOM وNode.js وExpress وGit وGitHub."
     },
     "viewHardwareStudy": "عرض المشاريع المختارة"
@@ -98,7 +98,12 @@
   "experience": {
     "tag": "الخبرة العملية",
     "title": "الخبرات المهنية",
+    "desc": "خبرة في الواجهات الأمامية باستخدام React وNext.js وTailwind CSS وتطوير الواجهات البرمجية.",
     "keyAchievements": "أبرز الأعمال"
+  },
+  "skillsFooter": {
+    "capabilities": "مهارات مذكورة في السيرة الذاتية",
+    "verified": "مهارة في السيرة الذاتية"
   },
   "github": {
     "tag": "GitHub",

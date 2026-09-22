@@ -37,7 +37,7 @@
       "desc": "HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap, and jQuery."
     },
     "hardwarePillar": {
-      "title": "State & Application Workflow",
+      "title": "Application Tools & Workflow",
       "desc": "Redux, Redux Toolkit, React Hooks, React Router DOM, Node.js, Express, Git, and GitHub."
     },
     "viewHardwareStudy": "View Selected Projects"
@@ -98,7 +98,12 @@
   "experience": {
     "tag": "Work Experience",
     "title": "Professional Experience",
+    "desc": "Front-end work across React, Next.js, Tailwind CSS, and API development.",
     "keyAchievements": "Highlights"
+  },
+  "skillsFooter": {
+    "capabilities": "Skills listed on CV",
+    "verified": "CV skill"
   },
   "github": {
     "tag": "GitHub",

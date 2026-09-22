@@ -106,7 +106,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
           {/* Main Content Column (8 cols) */}
           <div className="lg:col-span-8 space-y-12">
             
-            {/* Visual Architecture Showcase */}
+            {/* Project showcase */}
             <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-slate-950 border border-slate-800 shadow-xl">
               <Image 
                 src={study.image} 
@@ -147,7 +147,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 {isAr ? study.approachAr : study.approach}
               </p>
               <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800">
-                <div className="text-xs font-mono font-bold text-slate-400 mb-2">SYSTEM ARCHITECTURE SUMMARY:</div>
+                <div className="text-xs font-mono font-bold text-slate-400 mb-2">PROJECT SUMMARY:</div>
                 <p className="text-sm text-slate-700 dark:text-slate-300 font-medium">
                   {isAr ? study.architecture.descriptionAr : study.architecture.description}
                 </p>
@@ -222,7 +222,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
             {/* Direct Contact CTA */}
             <div className="p-8 bg-gradient-to-br from-emerald-500/10 via-cyan-500/5 to-transparent rounded-3xl border border-emerald-500/20 text-center">
               <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-white">
-                Require a Similar Architecture?
+                Need a Similar Front-End Project?
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
                 Get in touch with Ahmed about front-end development, React, Next.js, or Tailwind CSS.
@@ -231,7 +231,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 href="/contact" 
                 className="inline-block w-full py-3.5 px-6 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold text-sm transition-all shadow-md shadow-emerald-500/20"
               >
-                Initiate Architecture Consultation
+                Initiate a Project Conversation
               </Link>
             </div>
           </div>
