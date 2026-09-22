@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'motion/react';
 import { useTranslation } from '@/context/LanguageContext';
 import { ArrowLeft, ArrowRight, Calendar, Tag, User, Clock, Terminal, CheckCircle2 } from 'lucide-react';
-import { BLOG_POSTS_DATA } from '../data/portfolioData';
+import { BLOG_POSTS_DATA, PERSONAL_INFO } from '../data/portfolioData';
 
 interface BlogPostClientProps {
   id: string;
@@ -19,9 +19,9 @@ export default function BlogPostClient({ id }: BlogPostClientProps) {
   if (!post) {
     return (
       <div className="pt-32 pb-24 max-w-4xl mx-auto px-6 text-center">
-        <h1 className="text-4xl font-bold mb-4">Publication Not Found</h1>
+        <h1 className="text-4xl font-bold mb-4">Article Not Found</h1>
         <Link href="/blog" className="text-emerald-500 font-bold hover:underline">
-          Return to Engineering Blog
+          Return to Blog
         </Link>
       </div>
     );
@@ -79,13 +79,13 @@ export default function BlogPostClient({ id }: BlogPostClientProps) {
       {/* Share / Author Footer */}
       <div className="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
-          <h4 className="text-sm font-bold text-slate-900 dark:text-white">Written by Abdulrahman Redhwan</h4>
-          <p className="text-xs text-slate-500">Full-Stack Software Engineer & Founder at Madboot Nova</p>
+          <h4 className="text-sm font-bold text-slate-900 dark:text-white">Written by Ahmed Alkasadi</h4>
+          <p className="text-xs text-slate-500">Front-End Developer</p>
         </div>
 
         <div className="flex gap-3">
           <a 
-            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent('https://madbootnova.com/blog/' + post.id)}`}
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(PERSONAL_INFO.github)}`}
             target="_blank" 
             rel="noopener noreferrer"
             className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-xs font-bold rounded-xl hover:bg-emerald-500 hover:text-white transition-all"
@@ -93,7 +93,7 @@ export default function BlogPostClient({ id }: BlogPostClientProps) {
             Share on X
           </a>
           <a 
-            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://madbootnova.com/blog/' + post.id)}`}
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(PERSONAL_INFO.github)}`}
             target="_blank" 
             rel="noopener noreferrer"
             className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-xs font-bold rounded-xl hover:bg-emerald-500 hover:text-white transition-all"

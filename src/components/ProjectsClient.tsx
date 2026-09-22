@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Projects from './Projects';
 import { useTranslation } from '@/context/LanguageContext';
 import { Github, ArrowUpRight } from 'lucide-react';
+import { PERSONAL_INFO } from '../data/portfolioData';
 
 export default function ProjectsClient() {
   const { t } = useTranslation();
@@ -41,7 +42,7 @@ export default function ProjectsClient() {
             {t('projects.more.desc')}
           </p>
           <a 
-            href="https://github.com/ak01redwan" 
+            href={PERSONAL_INFO.github} 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold transition-all inline-flex items-center gap-2 shadow-lg shadow-emerald-500/20"

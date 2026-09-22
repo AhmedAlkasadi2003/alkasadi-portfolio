@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'motion/react';
-import { Briefcase, Building, Calendar, CheckCircle2 } from 'lucide-react';
+import { Briefcase, Building, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from '@/context/LanguageContext';
 import { EXPERIENCE_ITEMS } from '../data/portfolioData';
 
@@ -21,7 +21,7 @@ export default function Experience() {
             {t('experience.title')}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg">
-            Track record across high-scale enterprise software development, distributed systems, and physical hardware R&D.
+            Front-end experience across React, Next.js, Tailwind CSS, and API development.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function Experience() {
 
                     <div className="space-y-1.5 mb-4 p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-950/80 border border-slate-100 dark:border-slate-800">
                       <div className="text-[11px] font-mono font-bold text-slate-400 uppercase tracking-wider mb-2">
-                        KEY MEASURABLE OUTCOMES:
+                        {t('experience.keyAchievements')}:
                       </div>
                       {(isAr ? exp.keyWinsAr : exp.keyWins).map((win, idx) => (
                         <div key={idx} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">

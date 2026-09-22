@@ -1,9 +1,9 @@
 # Comprehensive SEO, Metadata, Entity Graph & Architectural Audit Report
 
-**Target Profile / Entity**: Abdulrahman Khalid Abdullah Redhwan (`ak01redwan`)  
-**Deployment Target**: `https://ak01redwan-portfolio.vercel.app`  
+**Target Profile / Entity**: Ahmed Mahfoodh Alkasadi (`AhmedAlkasadi2003`)  
+**Deployment Target**: `https://ahmed-alkasadi-portfolio.vercel.app`  
 **Application Architecture**: Next.js 16 (App Router), React 19, Tailwind CSS v4, Lucide Icons, Static Export (`output: "export"`)  
-**Audit Date**: August 2026  
+**Audit Date**: September 2026  
 **Status**: **100% Production Ready & Validated**
 
 ---
@@ -13,8 +13,8 @@
 This comprehensive audit was performed across all routing, metadata, Open Graph, Twitter Cards, Schema.org Entity Graphs, sitemaps, robots configuration, and bilingual (English/Arabic) UI layers.
 
 ### Key Remediation Highlights:
-- **Eliminated Domain Fragmentation**: Created a single source of truth (`SITE_URL` in `src/lib/siteConfig.ts`) configured to `process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'`. All `metadataBase`, canonical URLs, Open Graph images, Schema.org IDs, `sitemap.xml`, and `robots.txt` now dynamically resolve to this canonical source with zero conflicting template domains.
-- **Root Person & WebSite Entity Authority**: Implemented a Schema.org `@graph` anchoring `ak01redwan` (`Abdulrahman Khalid Abdullah Redhwan` / `عبدالرحمن خالد عبدالله رضوان`), indexing all known professional aliases in English and Arabic, alumni credentials from Al-Ahgaff University, verified GitHub/LinkedIn/X/Dev.to/StackOverflow/Medium sameAs links, and occupational skill arrays.
+- **Eliminated Domain Fragmentation**: Created a single source of truth (`SITE_URL` in `src/lib/siteConfig.ts`) configured to the canonical site URL for Ahmed’s portfolio. All `metadataBase`, canonical URLs, Open Graph images, Schema.org IDs, `sitemap.xml`, and `robots.txt` resolve dynamically to that source without conflicting templates.
+- **Root Person & WebSite Entity Authority**: Implemented a Schema.org `@graph` anchored to Ahmed Alkasadi, indexing the portfolio aliases in English and Arabic, verified GitHub and LinkedIn links, and the associated front-end skill set.
 - **Deep Structured Data Across All Pages**:
   - `ProfilePage` and `BreadcrumbList` on `/about` and `/resume`.
   - `CollectionPage` and `BreadcrumbList` on `/projects`.
@@ -37,20 +37,20 @@ File: `src/lib/siteConfig.ts`
 
 ```typescript
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://ahmed-alkasadi-portfolio.vercel.app'
 ).replace(/\/+$/, '');
 
 export const SITE_CONFIG = {
-  name: 'Abdulrahman Redhwan',
-  fullName: 'Abdulrahman Khalid Abdullah Redhwan',
-  fullNameAr: 'عبدالرحمن خالد عبدالله رضوان',
-  shortName: 'Abdulrahman Redhwan',
-  shortNameAr: 'عبدالرحمن رضوان',
-  username: 'ak01redwan',
-  title: 'Full-Stack Software Engineer & Technical Lead',
-  titleAr: 'مهندس برمجيات شامل وقائد تقني',
-  location: 'Al-Mukalla, Hadhramaut, Yemen',
-  locationAr: 'المكلا، حضرموت، اليمن',
+  name: 'Ahmed Alkasadi',
+  fullName: 'Ahmed Mahfoodh Alkasadi',
+  fullNameAr: 'أحمد محفوظ الكاسدي',
+  shortName: 'Ahmed Alkasadi',
+  shortNameAr: 'أحمد الكاسدي',
+  username: 'AhmedAlkasadi2003',
+  title: 'Front-End Developer',
+  titleAr: 'مطور واجهات أمامية',
+  location: 'Hadramout, Yemen',
+  locationAr: 'حضرموت، اليمن',
   country: 'Yemen',
   // ...
 };
@@ -82,12 +82,11 @@ export const SITE_CONFIG = {
 
 ### Search Query Coverage:
 The Knowledge Graph and metadata explicitly index:
-1. **Primary Names**: Abdulrahman Khalid Abdullah Redhwan, عبدالرحمن خالد عبدالله رضوان
-2. **Short Handles**: ak01redwan, Abdulrahman Redhwan, عبدالرحمن رضوان
-3. **Colloquial Aliases**: Abdu Redwan, Abdu Khalid, عبدالرحمن خالد, عبدو رضوان
-4. **Keyword Searches**: ak programmer, ak developer, ak01code, ak مبرمج, ak المطور
-5. **Geographical Queries**: Yemen Software Engineer, Al-Mukalla Developer, Hadhramaut Full-Stack Engineer, مبرمج حضرموت، مهندس برمجيات اليمن
-6. **Technical Queries**: Laravel 12 Developer, Nuxt 4 SSR Engineer, Next.js 16 Architect, .NET Core Developer, 3-Axis CNC Machine Maker Yemen
+1. **Primary Names**: Ahmed Mahfoodh Alkasadi, أحمد محفوظ الكاسدي
+2. **Short Handles**: Ahmed Alkasadi, AhmedAlkasadi2003, أحمد الكاسدي
+3. **Keyword Searches**: Ahmed frontend developer, Ahmed React developer, Ahmed Next.js developer, أحمد مطور واجهات أمامية, أحمد React.js
+4. **Geographical Queries**: Yemen Front-End Developer, Hadramout web developer, حضرموت مطور واجهات أمامية
+5. **Technical Queries**: React.js Developer, Next.js Developer, Tailwind CSS Developer, HTML CSS JavaScript Front-End Engineer
 
 ---
 

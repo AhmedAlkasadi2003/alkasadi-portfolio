@@ -1,131 +1,78 @@
 /**
- * Centralized Site Configuration & SEO Entity Constants
- * Single source of truth for domain, canonical URLs, identity graph, and schema generation.
+ * Centralized identity, canonical URL, and schema configuration.
+ * Set NEXT_PUBLIC_SITE_URL in production to the deployed portfolio URL.
  */
 
-export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://ak01redwan-portfolio.vercel.app'
-).replace(/\/+$/, '');
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/+$/, '');
 
 export const SITE_CONFIG = {
-  name: 'Abdulrahman Redhwan',
-  fullName: 'Abdulrahman Khalid Abdullah Redhwan',
-  fullNameAr: 'عبدالرحمن خالد عبدالله رضوان',
-  shortName: 'Abdulrahman Redhwan',
-  shortNameAr: 'عبدالرحمن رضوان',
-  username: 'ak01redwan',
-  
-  title: 'Full-Stack Software Engineer & Technical Lead',
-  titleAr: 'مهندس برمجيات شامل وقائد تقني',
-  
-  tagline: 'Bridging High-Throughput Software Architecture with Physical Hardware & CNC Automation',
-  taglineAr: 'الجمع بين هندسة المنظومات البرمجية المؤسسية وتصنيع الآلات الفيزيائية المؤتمتة',
-  
-  description: 'Executive Portfolio of Abdulrahman Khalid Abdullah Redhwan (ak01redwan) — Full-Stack Software Engineer & Technical Lead specializing in Laravel 12, Nuxt 4, Next.js 16, .NET Core, automated CI/CD pipelines, and custom 3-axis CNC hardware automation. Based in Al-Mukalla, Hadhramaut, Yemen; providing remote engineering excellence globally.',
-  descriptionAr: 'الملف المهني للمهندس عبدالرحمن خالد عبدالله رضوان (ak01redwan) — مهندس برمجيات شامل وقائد تقني، متخصص في Laravel 12 وNuxt 4 وNext.js و.NET Core وخطوط النشر المؤتمتة CI/CD وتصنيع آلات الـ CNC. المكلا، حضرموت، اليمن.',
-  
-  location: 'Al-Mukalla, Hadhramaut, Yemen',
-  locationAr: 'المكلا، حضرموت، اليمن',
+  name: 'Ahmed Alkasadi',
+  fullName: 'Ahmed Mahfoodh Alkasadi',
+  fullNameAr: 'أحمد محفوظ الكاسدي',
+  shortName: 'Ahmed Alkasadi',
+  shortNameAr: 'أحمد الكاسدي',
+  username: 'AhmedAlkasadi2003',
+  title: 'Front-End Developer',
+  titleAr: 'مطور واجهات أمامية',
+  tagline: 'Modern, interactive, and high-performance front-end applications.',
+  taglineAr: 'تطبيقات واجهات أمامية حديثة وتفاعلية وعالية الأداء.',
+  description: 'Portfolio of Ahmed Mahfoodh Alkasadi, a Front-End Developer in Hadramout, Yemen. Skilled in HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Redux, Node.js, Express, Git, and GitHub.',
+  descriptionAr: 'ملف أعمال أحمد محفوظ الكاسدي، مطور واجهات أمامية من حضرموت، اليمن. تشمل مهاراته HTML وCSS وJavaScript وReact.js وNext.js وTailwind CSS وRedux وNode.js وExpress وGit وGitHub.',
+  location: 'Hadramout, Yemen',
+  locationAr: 'حضرموت، اليمن',
   country: 'Yemen',
   countryCode: 'YE',
-  
-  emails: ['ak01redwan@gmail.com', 'ak01redwan@madbootnova.com'],
-  phones: ['+967 776 716 697', '+967 776 248 526'],
-  
-  agency: 'Madboot Nova',
-  agencyUrl: 'https://madbootnova.com',
-  repositoryUrl: 'https://github.com/ak01redwan/ak01redwan-portfolio',
-  
-  socials: {
-    github: 'https://github.com/ak01redwan',
-    linkedin: 'https://www.linkedin.com/in/ak01redwan',
-    twitter: 'https://x.com/ak01redwan',
-    stackoverflow: 'https://stackoverflow.com/users/ak01redwan',
-    devto: 'https://dev.to/ak01redwan',
-    medium: 'https://medium.com/@ak01redwan',
+  emails: ['ahmed.alkasadi2003@gmail.com'],
+  phones: ['+967 770 500 789'],
+  education: {
+    degree: 'Bachelor of Information Technology',
+    institution: 'Hadramout University of Science and Technology',
+    period: '2020 – 2025',
+    grade: 'Very Good',
   },
-  
+  socials: {
+    github: 'https://github.com/AhmedAlkasadi2003',
+    linkedin: 'https://www.linkedin.com/in/ahmed-alkasadi',
+  },
   aliases: [
-    'ak01redwan',
-    'Abdulrahman Redhwan',
-    'Abdulrahman Khalid Abdullah Redhwan',
-    'Abdu Redwan',
-    'Abdu Khalid',
-    'Abdulrahman Khalid',
-    'Abdulrahman K. Redhwan',
-    'A. K. Redhwan',
-    'AK',
-    'ak01',
-    'ak01code',
-    'ak10redwan',
-    'ak10code',
-    'ak programmer',
-    'ak developer',
-    'ak code',
-    'ak مبرمج',
-    'ak المطور',
+    'Ahmed Alkasadi',
+    'Ahmed Mahfoodh Alkasadi',
+    'AhmedAlkasadi2003',
   ],
-  
-  aliasesAr: [
-    'عبدالرحمن خالد عبدالله رضوان',
-    'عبدالرحمن رضوان',
-    'عبدو رضوان',
-    'عبدو خالد',
-    'عبدالرحمن خالد',
-    'عبدالرحمن رضوان مبرمج',
-    'عبدالرحمن رضوان مطور',
-    'ak01redwan مبرمج',
-    'ak01redwan مطور',
-    'ak01code مبرمج',
-    'ak01code مطور',
-  ],
-  
+  aliasesAr: ['أحمد الكاسدي', 'أحمد محفوظ الكاسدي'],
   coreSkills: [
-    'Laravel 12',
-    'Nuxt.js 4',
-    'Next.js 16',
-    'React 19',
-    'Vue.js 3',
-    'TypeScript',
-    'PHP',
-    '.NET Core',
-    'C#',
-    'SQL Server',
-    'PostgreSQL',
-    'MySQL',
-    'REST APIs',
-    'CI/CD Automation',
-    'GitHub Actions',
-    'Docker',
-    'Redis',
-    'CNC Machine Engineering',
-    'G-Code & M-Code',
-    'Arduino Embedded Systems',
-    'GRBL / Marlin Firmware',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'jQuery',
+    'Bootstrap',
+    'Tailwind CSS',
+    'React.js',
+    'Redux',
+    'Redux Toolkit',
+    'React Hooks',
+    'Next.js',
+    'Node.js',
+    'Express',
+    'Git',
+    'GitHub',
   ],
 };
 
-export function getAbsoluteUrl(path: string = ''): string {
+export function getAbsoluteUrl(path = ''): string {
   if (!path) return SITE_URL;
   if (path.startsWith('http://') || path.startsWith('https://')) return path;
-  const cleanPath = path.startsWith('/') ? path : `/${path}`;
-  return `${SITE_URL}${cleanPath}`;
+  return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-export function getCanonicalUrl(path: string = ''): string {
+export function getCanonicalUrl(path = ''): string {
   return getAbsoluteUrl(path);
 }
 
-export function getOgImageUrl(imagePath?: string): string {
-  if (imagePath) {
-    return getAbsoluteUrl(imagePath);
-  }
-  return getAbsoluteUrl('/og-image.png');
+export function getOgImageUrl(imagePath = '/og-image.svg'): string {
+  return getAbsoluteUrl(imagePath);
 }
 
-/**
- * Generates the Root Person and WebSite Schema.org Graph
- */
 export function generateRootJsonLd() {
   const personId = `${SITE_URL}/#person`;
   const websiteId = `${SITE_URL}/#website`;
@@ -141,73 +88,42 @@ export function generateRootJsonLd() {
         jobTitle: SITE_CONFIG.title,
         description: SITE_CONFIG.description,
         url: SITE_URL,
-        image: getAbsoluteUrl('/profile.png'),
+        image: getAbsoluteUrl('/images/profile-avatar.svg'),
         email: `mailto:${SITE_CONFIG.emails[0]}`,
         telephone: SITE_CONFIG.phones[0],
-        gender: 'Male',
         nationality: {
           '@type': 'Country',
           name: SITE_CONFIG.country,
         },
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Al-Mukalla',
-          addressRegion: 'Hadhramaut',
+          addressRegion: 'Hadramout',
           addressCountry: SITE_CONFIG.country,
         },
         alumniOf: {
           '@type': 'EducationalOrganization',
-          name: 'Al-Ahgaff University',
-          url: 'https://ahgaff.edu',
-        },
-        worksFor: {
-          '@type': 'Organization',
-          name: SITE_CONFIG.agency,
-          url: SITE_CONFIG.agencyUrl,
+          name: SITE_CONFIG.education.institution,
         },
         hasOccupation: {
           '@type': 'Occupation',
-          name: 'Full-Stack Software Engineer & Technical Lead',
-          occupationalCategory: '15-1252.00',
+          name: SITE_CONFIG.title,
           skills: SITE_CONFIG.coreSkills.join(', '),
         },
         knowsLanguage: [
-          {
-            '@type': 'Language',
-            name: 'Arabic',
-            alternateName: 'ar',
-          },
-          {
-            '@type': 'Language',
-            name: 'English',
-            alternateName: 'en',
-          },
+          { '@type': 'Language', name: 'Arabic', alternateName: 'ar' },
+          { '@type': 'Language', name: 'English', alternateName: 'en' },
         ],
-        sameAs: [
-          SITE_CONFIG.socials.github,
-          SITE_CONFIG.socials.linkedin,
-          SITE_CONFIG.socials.twitter,
-          SITE_CONFIG.socials.stackoverflow,
-          SITE_CONFIG.socials.devto,
-          SITE_CONFIG.socials.medium,
-          SITE_CONFIG.repositoryUrl,
-        ],
+        sameAs: [SITE_CONFIG.socials.github, SITE_CONFIG.socials.linkedin],
       },
       {
         '@type': 'WebSite',
         '@id': websiteId,
         url: SITE_URL,
-        name: `${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Official Portfolio`,
-        alternateName: [
-          'ak01redwan Portfolio',
-          'Abdulrahman Redhwan Portfolio',
-          'موقع عبدالرحمن رضوان',
-        ],
+        name: `${SITE_CONFIG.shortName} | Portfolio`,
+        alternateName: ['Ahmed Alkasadi Portfolio', 'ملف أعمال أحمد الكاسدي'],
         description: SITE_CONFIG.description,
-        inLanguage: ['en-US', 'ar-YE'],
-        publisher: {
-          '@id': personId,
-        },
+        inLanguage: ['en', 'ar'],
+        publisher: { '@id': personId },
       },
     ],
   };

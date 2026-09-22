@@ -1,15 +1,15 @@
 # Comprehensive Project Audit & Technical Architecture Report
-**Project Name:** Professional Developer Portfolio & Systems Architecture Showcase  
-**Developer & Technical Lead:** Abdulrahman Khalid Abdullah Redhwan  
-**Agency / Organization:** Madboot Nova  
-**Generated At:** August 2026  
+**Project Name:** Professional Portfolio & Front-End Development Showcase  
+**Developer:** Ahmed Mahfoodh Alkasadi  
+**Organization / Brand:** Ahmed Alkasadi  
+**Generated At:** September 2026  
 **Status:** Production Ready (Next.js 16 App Router)
 
 ---
 
 ## 1. Executive Summary & Project Purpose
 
-This project is an enterprise-grade personal portfolio, digital resume, and engineering case study showcase developed for **Abdulrahman Khalid Abdullah Redhwan** (Founder of Madboot Nova, Technical Lead, and Senior Software Architect). 
+This project is a polished personal portfolio, digital resume, and front-end case study showcase developed for **Ahmed Mahfoodh Alkasadi**, a Front-End Developer specializing in interactive, modern, and maintainable UI engineering. 
 
 The platform is designed to:
 1. **Demonstrate High-Level Technical Mastery**: Showcase 10+ years of software architecture, full-stack engineering, microservices orchestration, and cross-platform leadership (spanning C#, Java, Python, C++, Laravel, Nuxt.js, React, and Next.js).
@@ -142,68 +142,61 @@ Typography is loaded from Google Fonts in `src/index.css` and mapped via CSS var
 
 ### 5.1 Home Page (`/`) — `src/app/page.tsx`
 - **Hero Section (`Hero.tsx`)**:
-  - Animated badge indicating role ("Software Architect & Technical Lead").
+  - Animated badge indicating role ("Front-End Developer").
   - Large headline with gradient text clipping.
-  - Primary CTA button ("Explore Architecture" linking to `/projects`) and secondary CTA ("Initiate Engagement" linking to `/contact`).
-  - 11 direct social profile links: GitHub, LinkedIn, X/Twitter, Stack Overflow, Dev.to, Medium, CodePen, Behance, Dribbble, direct Email, and direct Phone.
+  - Primary CTA button ("Explore Work" linking to `/projects`) and secondary CTA ("Get in Touch" linking to `/contact`).
+  - Direct social profile links for GitHub and LinkedIn plus contact channels.
   - Profile image card framed by ambient pulsing gradient backdrops.
 - **Executive Summary Teaser**:
-  - Brief overview paragraph with direct link to full `/about` page.
-  - Live metric stat boxes displaying "150+ Production Systems" and "10+ Years Engineering".
+  - Brief overview paragraph with direct link to the full `/about` page.
+  - Live metric stat boxes highlighting portfolio breadth and technical focus.
 - **Skills Bento Grid (`Skills.tsx`)**:
-  - 4 major architectural categories: Backend & Distributed Systems, Frontend Engineering, Databases & Query Optimization, DevOps & CI/CD Pipelines.
-  - Interactive chip tags highlighting specific technologies (Django, Laravel, .NET, Node.js, NestJS, Vue 3, Nuxt.js, TypeScript, PostgreSQL, Docker, Redis).
+  - Front-end categories covering UI engineering, interface architecture, responsive implementation, and modern web tooling.
+  - Interactive chip tags highlighting technologies such as HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Redux, and Git/GitHub.
 - **Projects Teaser (`Projects.tsx`)**:
-  - Grid of enterprise case studies with hover overlays linking to source code and live demonstrations.
+  - Grid of case studies highlighting interface design, user experience, and front-end delivery work.
 - **GitHub Live Activity Feed (`GitHubActivity.tsx`)**:
-  - Real-time client-side query to the GitHub REST API for `@ak01redwan`.
-  - Displays top 4 most recently updated public repositories with star counts, fork counts, and color-coded language tags.
+  - Real-time client-side query to the GitHub REST API for `@AhmedAlkasadi2003`.
+  - Displays recently updated public repositories with language tags and repository metadata.
 
 ### 5.2 About Page (`/about`) — `src/app/about/page.tsx`
-- **Header Banner**: Introduces the executive summary with subtle background tinting.
+- **Header Banner**: Introduces the professional summary with subtle background tinting.
 - **Core Bio & Metrics (`About.tsx`)**:
-  - Deep-dive biographical narrative highlighting leadership, architecture philosophy, and multi-language fluency.
-  - 4-card statistics grid (10+ Years, 150+ Systems, 80+ Clients, 1M+ Deployments/Code).
-  - Core features checklist: Enterprise Architecture, Technical Leadership, SaaS Scaling, and CI/CD Automation.
+  - Deep-dive biographical narrative highlighting design thinking, technical discipline, and bilingual communication.
+  - Portfolio statistics focused on projects, interface delivery, and applied front-end work.
+  - Core features checklist: Front-End Development, UI Architecture, Modern Web Experiences, and Responsive Design.
 - **Engineering Philosophy & Core Tenets**:
-  - Two-column layout detailing architectural philosophy (performance obsession, zero-downtime deployments, clean-code mandates).
-  - Core Technical Tenets card: Scalability by Default, Rigorous Code Quality, Performance Obsession, Architectural Supremacy, and Automated Deployment.
+  - Two-column layout detailing development philosophy (clean interfaces, maintainability, performance, and user experience).
+  - Core Technical Tenets card: Scalable UI, Maintainable Code, Performance Focus, Product Thinking, and Clean Implementation.
 - **Work History Timeline (`Experience.tsx`)**:
-  - Alternating vertical timeline depicting career milestones:
-    1. **Madboot Nova** (Present): Founder & Technical Lead.
-    2. **Bootfi** (2024–2025): Frontend Developer (Nuxt.js / SSR / Vue 3).
-    3. **Novel Soft Company** (2023–2024): Software Developer (Node.js, Express, Windows Forms, SQL Server).
-    4. **Freelance / CNC & Embedded Systems** (2019–Present): Embedded Systems & G-Code Automation Developer.
+  - Alternating vertical timeline depicting career milestones and educational context in front-end engineering and web development.
 
 ### 5.3 Projects Page (`/projects`) — `src/app/projects/page.tsx`
-- **Hero Intro**: Overview of delivered production systems.
-- **Enterprise Case Studies Grid (`Projects.tsx`)**:
-  - **nopCommerce Integrations**: Custom payment gateways and logistics shipping plugins for nopCommerce and Smartstore (.NET, C#, SQL Server).
-  - **AI Background Remover**: Intelligent image isolation service (Python, Flask, rembg, Docker, REST API).
-  - **University CMS Systems**: Enterprise multi-tier portal built for Ahgaff University (.NET / Umbraco, modern Python / Django transition).
-  - **SrmedEco Platform**: Microservices-based digital commerce architecture (Node.js, NestJS, PostgreSQL, Redis).
-- **Custom Architecture Inquiry CTA**: Full-width card inviting enterprise architectural audits with a direct link to GitHub repositories.
+- **Hero Intro**: Overview of delivered interactive front-end and web product work.
+- **Case Studies Grid (`Projects.tsx`)**:
+  - **Corporate management platforms**: Company profiles and internal workflows built with Next.js and Tailwind CSS.
+  - **Content and media management**: Business dashboards for content, services, and course administration.
+  - **Dashboard and admin panels**: Operational interfaces for education and application management.
+  - **E-commerce storefronts**: Product browsing, cart flows, and checkout UX patterns.
+- **Custom Collaboration CTA**: Full-width card inviting development inquiries and project collaboration.
 
 ### 5.4 Contact Page (`/contact`) — `src/app/contact/page.tsx`
-- **Direct Engagement Header**: Introduction inviting technical consultations.
+- **Direct Engagement Header**: Introduction inviting collaboration and project inquiries.
 - **Contact Overview (`Contact.tsx`)**:
-  - Direct information cards for Executive Email (`ak01redwan@gmail.com`), Direct Phone (`+967 776 248 526`), and Headquarters Location (`Mukalla, Yemen`).
-  - Complete 9-network social icon hub.
-  - High-conversion interactive contact form with Full Name, Email Address, Subject, and Message inputs.
-- **Service Guarantees & SLAs**:
-  - 3-card bottom section highlighting Engineering Availability, Service Level Agreement (consultation response within 24 hours), and Technical Networks.
+  - Direct information cards for email, phone, and location details.
+  - Social profile links for GitHub and LinkedIn.
+  - Interactive contact form with Full Name, Email Address, Subject, and Message inputs.
+- **Service Guarantees & Response Standards**:
+  - 3-card bottom section highlighting communication availability, project responsiveness, and professional network access.
 
 ### 5.5 Technical Blog & Dynamic Posts (`/blog` & `/blog/[id]`)
 - **Blog Overview (`src/app/blog/page.tsx`)**:
-  - Curated publication directory covering technical paradigms:
-    - *Scaling E-commerce with nopCommerce Integrations* (E-commerce).
-    - *Modernizing University Systems: .NET to Django* (Architecture).
-    - *Microservices Architecture for Scalable Platforms* (Backend).
+  - Curated publication directory covering front-end and product-thinking topics.
 - **Dynamic Post Reading View (`src/app/blog/[id]/page.tsx`)**:
-  - Dynamic route parsing with fallback 404 handler if the post identifier does not exist.
-  - Publication metadata header (Date, Category, Author `AK01.REDWAN`).
-  - Rich typography styling (`prose prose-lg dark:prose-invert`) featuring callout quotes, lists, and technical paradigms.
-  - Interactive social sharing triggers and bidirectional back-to-blog navigation.
+  - Dynamic route parsing with fallback 404 handling when the post identifier is missing.
+  - Publication metadata header (Date, Category, Author `Ahmed Alkasadi`).
+  - Rich typography styling (`prose prose-lg dark:prose-invert`) featuring technical analysis and interface perspectives.
+  - Interactive sharing and bidirectional back-to-blog navigation.
 
 ### 5.6 Global Layout & Floating Components
 - **`src/app/layout.tsx`**:
@@ -279,16 +272,16 @@ export interface SocialLink {
 ## 8. SEO, Meta Tags & Structured Data
 
 1. **Metadata Configuration (`src/app/layout.tsx`)**:
-   - `title`: `Abdulrahman Khalid Abdullah Redhwan | Software Architect`
-   - `description`: Comprehensive summary of expertise, agency leadership, and engineering specialties.
+   - `title`: `Ahmed Mahfoodh Alkasadi | Front-End Developer`
+   - `description`: Comprehensive summary of front-end expertise, UI development, and modern web interfaces.
    - `openGraph`: Configured with type `website` for social media preview card generation.
 2. **Schema.org Structured Data (JSON-LD)**:
-   - Type: `Person` & `Organization` (`Madboot Nova`).
-   - Fields: Name, Job Title, URL, SameAs links (GitHub, LinkedIn), and `knowsAbout` skills array.
+   - Type: `Person` with professional details and social profile links.
+   - Fields: Name, Job Title, URL, SameAs links (GitHub, LinkedIn), and skills array.
 3. **Automated Robots Directive (`src/app/robots.ts`)**:
-   - Static route returning allow rule for all user agents and declaring sitemap location `https://madbootnova.com/sitemap.xml`.
+   - Static route returning allow rule for all user agents and declaring sitemap location using the configured site URL.
 4. **Automated XML Sitemap (`src/app/sitemap.ts`)**:
-   - Maps all key routes (`/`, `/about`, `/projects`, `/blog`, `/contact`) with priorities and change frequencies.
+   - Maps relevant routes (`/`, `/about`, `/projects`, `/blog`, `/contact`) with priorities and change frequencies.
 
 ---
 

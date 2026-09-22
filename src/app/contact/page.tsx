@@ -3,8 +3,8 @@ import ContactClient from '../../components/ContactClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `Contact & Architectural Consultation | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-  description: `Initiate an engineering consultation or project inquiry with ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Engineer, Technical Lead, and Founder of Madboot Nova. Guaranteed SLA response within 24 hours.`,
+  title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Developer`,
+  description: `Reach out to ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) for front-end development, React.js and Next.js projects, UI implementation, and web application collaboration.`,
   alternates: {
     canonical: getCanonicalUrl('/contact'),
     languages: {
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Engineering Inquiry`,
-    description: `Get in touch for enterprise software architecture, full-stack web platforms, API development, or hardware CNC automation projects.`,
+    title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Developer`,
+    description: `Get in touch for website development, UI design implementation, React.js work, and front-end product collaboration.`,
     url: getCanonicalUrl('/contact'),
     type: 'website',
     images: [
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `Contact ${SITE_CONFIG.fullName} — Engineering Consultation`,
+        alt: `Contact ${SITE_CONFIG.fullName} — Front-End Development`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Engineering Consultation`,
-    description: `Full-Stack Software Engineer & Technical Lead. Direct consultation channel.`,
+    title: `Contact ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Development`,
+    description: `Front-End Developer available for web UI, React.js, and Next.js collaboration.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },
@@ -46,8 +46,8 @@ export default function ContactPage() {
         '@type': 'ContactPage',
         '@id': `${getCanonicalUrl('/contact')}#webpage`,
         url: getCanonicalUrl('/contact'),
-        name: `Contact & Direct Engineering Consultation — ${SITE_CONFIG.fullName}`,
-        description: `Direct inquiry channel for high-throughput software systems, cloud architecture, and CNC hardware projects with ${SITE_CONFIG.fullName}.`,
+        name: `Contact ${SITE_CONFIG.fullName}`,
+        description: `Direct inquiry channel for front-end development, UI systems, and web application collaboration with ${SITE_CONFIG.fullName}.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

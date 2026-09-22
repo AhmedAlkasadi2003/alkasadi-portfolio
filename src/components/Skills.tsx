@@ -5,11 +5,9 @@ import {
   Code2, 
   Server, 
   Layout, 
-  Cpu, 
   GitBranch, 
-  Monitor, 
   Database,
-  CheckCircle2,
+  Palette,
   Terminal
 } from 'lucide-react';
 import { useTranslation } from '@/context/LanguageContext';
@@ -24,9 +22,8 @@ export default function Skills() {
       case 'Code2': return <Code2 className="w-6 h-6 text-emerald-500" />;
       case 'Server': return <Server className="w-6 h-6 text-blue-500" />;
       case 'Layout': return <Layout className="w-6 h-6 text-cyan-500" />;
-      case 'Cpu': return <Cpu className="w-6 h-6 text-amber-500" />;
+      case 'Palette': return <Palette className="w-6 h-6 text-pink-500" />;
       case 'GitBranch': return <GitBranch className="w-6 h-6 text-indigo-500" />;
-      case 'Monitor': return <Monitor className="w-6 h-6 text-purple-500" />;
       default: return <Database className="w-6 h-6 text-emerald-500" />;
     }
   };
@@ -56,7 +53,7 @@ export default function Skills() {
             <div
               key={cat.id}
               className={`p-6 md:p-8 bg-white dark:bg-slate-900/90 rounded-3xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm hover:shadow-xl hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group ${
-                cat.id === 'hardware' ? 'md:col-span-2 lg:col-span-1 border-amber-500/20 bg-amber-500/[0.02]' : ''
+              ''
               }`}
             >
               <div>

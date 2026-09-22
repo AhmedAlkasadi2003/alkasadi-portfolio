@@ -225,7 +225,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
                 Require a Similar Architecture?
               </h3>
               <p className="text-xs text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                Consult with Abdulrahman on high-throughput web systems, CI/CD automation, or custom hardware controllers.
+                Get in touch with Ahmed about front-end development, React, Next.js, or Tailwind CSS.
               </p>
               <Link 
                 href="/contact" 

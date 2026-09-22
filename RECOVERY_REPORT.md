@@ -1,7 +1,7 @@
 # Project Forensic Recovery & Production Repair Report
-**Project:** Abdulrahman Redhwan Portfolio & Systems Engineering Showcase  
-**Role:** Senior Next.js Architect & Full-Stack Systems Engineer  
-**Date:** August 17, 2026  
+**Project:** Ahmed Alkasadi Portfolio & Front-End Showcase  
+**Role:** Front-End Developer & UI Engineer  
+**Date:** September 22, 2026  
 **Final Status:** `PRODUCTION READY`
 
 ---

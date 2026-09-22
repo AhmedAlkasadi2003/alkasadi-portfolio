@@ -3,8 +3,8 @@ import AboutClient from '../../components/AboutClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Systems Architect & Maker`,
-  description: `Biography and engineering philosophy of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Software Engineer & Technical Lead specializing in enterprise SaaS, Laravel, Nuxt SSR, .NET Core, CI/CD, and custom 3-axis CNC hardware automation.`,
+  title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Developer`,
+  description: `Biography and professional profile of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Front-End Developer focused on interactive, maintainable interfaces with HTML, CSS, JavaScript, React.js, Next.js, and Tailwind CSS.`,
   alternates: {
     canonical: getCanonicalUrl('/about'),
     languages: {
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Full-Stack Engineer & Hardware Maker`,
-    description: `Learn about ${SITE_CONFIG.fullName} — Full-Stack Engineer, Technical Lead, and maker of automated CNC machinery.`,
+    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Developer`,
+    description: `Learn about ${SITE_CONFIG.fullName} — Front-End Developer building modern, interactive, and high-performance web interfaces.`,
     url: getCanonicalUrl('/about'),
     type: 'profile',
-    firstName: 'Abdulrahman',
-    lastName: 'Redhwan',
+    firstName: 'Ahmed',
+    lastName: 'Alkasadi',
     username: SITE_CONFIG.username,
     gender: 'male',
     images: [
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `${SITE_CONFIG.fullName} Biography and Engineering Profile`,
+        alt: `${SITE_CONFIG.fullName} Biography and Professional Profile`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Systems Architect`,
-    description: `Full-Stack Software Engineer & Technical Lead. Software systems & CNC machine automation.`,
+    title: `About ${SITE_CONFIG.shortName} (${SITE_CONFIG.username}) | Front-End Developer`,
+    description: `Front-End Developer building modern, interactive, and high-performance user experiences.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },

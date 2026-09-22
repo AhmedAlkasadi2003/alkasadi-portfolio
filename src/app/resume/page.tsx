@@ -3,8 +3,8 @@ import ResumeClient from '../../components/ResumeClient';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl, generateBreadcrumbJsonLd } from '../../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `Executive Curriculum Vitae (CV) & Verified Credentials | ${SITE_CONFIG.shortName}`,
-  description: `Official Curriculum Vitae of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Full-Stack Engineer, Technical Lead, and Physical Hardware Maker with 5+ years of production experience in Laravel, Nuxt, Next.js, .NET Core, CI/CD, and CNC automation.`,
+  title: `Curriculum Vitae | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
+  description: `Official Curriculum Vitae of ${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Front-End Developer focused on modern web interfaces with HTML, CSS, JavaScript, React.js, Next.js, and Tailwind CSS.`,
   alternates: {
     canonical: getCanonicalUrl('/resume'),
     languages: {
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `Curriculum Vitae | ${SITE_CONFIG.fullName} (${SITE_CONFIG.username})`,
-    description: `Senior Full-Stack Software Engineer & Technical Lead CV, verified competencies, and academic credentials.`,
+    description: `Front-End Developer profile, technical skills, and academic credentials for Ahmed Alkasadi.`,
     url: getCanonicalUrl('/resume'),
     type: 'profile',
-    firstName: 'Abdulrahman',
-    lastName: 'Redhwan',
+    firstName: 'Ahmed',
+    lastName: 'Alkasadi',
     username: SITE_CONFIG.username,
     gender: 'male',
     images: [
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: 'image/png',
-        alt: `${SITE_CONFIG.fullName} CV & Verified Credentials`,
+        alt: `${SITE_CONFIG.fullName} CV & Credentials`,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `Curriculum Vitae | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
-    description: `Full-Stack Software Engineer, Founder of Madboot Nova, and Hardware Maker.`,
+    description: `Front-End Developer specializing in modern web interfaces and application experiences.`,
     images: [getOgImageUrl('/og-image.png')],
     creator: `@${SITE_CONFIG.username}`,
   },
@@ -50,8 +50,8 @@ export default function ResumePage() {
         '@type': 'ProfilePage',
         '@id': `${getCanonicalUrl('/resume')}#webpage`,
         url: getCanonicalUrl('/resume'),
-        name: `Curriculum Vitae & Verified Credentials — ${SITE_CONFIG.fullName}`,
-        description: `Executive CV detailing full-stack web engineering, .NET Core systems, CI/CD automation, and hardware CNC prototyping experience of ${SITE_CONFIG.fullName}.`,
+        name: `Curriculum Vitae — ${SITE_CONFIG.fullName}`,
+        description: `Professional CV for ${SITE_CONFIG.fullName}, highlighting front-end development, modern UI engineering, and academic credentials.`,
         mainEntity: {
           '@id': `${SITE_URL}/#person`,
         },

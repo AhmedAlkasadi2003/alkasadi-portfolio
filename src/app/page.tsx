@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import { SITE_CONFIG, SITE_URL, getCanonicalUrl, getOgImageUrl } from '../lib/siteConfig';
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Software Engineer & Technical Lead`,
+  title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Front-End Developer`,
   description: SITE_CONFIG.description,
   alternates: {
     canonical: getCanonicalUrl(),
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Full-Stack Software Engineer & Technical Lead`,
+    title: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) | Front-End Developer`,
     description: SITE_CONFIG.description,
     url: SITE_URL,
     type: 'website',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: getOgImageUrl('/og-image.png'),
         width: 1200,
         height: 630,
-        alt: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Software Engineer & Technical Lead`,
+        alt: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Front-End Developer`,
       },
     ],
   },
