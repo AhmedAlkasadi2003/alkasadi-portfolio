@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     gender: 'male',
     images: [
       {
-        url: getOgImageUrl('/og-image.png'),
-        secureUrl: getOgImageUrl('/og-image.png'),
+        url: getOgImageUrl('/og-image.svg'),
+        secureUrl: getOgImageUrl('/og-image.svg'),
         width: 1200,
         height: 630,
         type: 'image/png',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `Curriculum Vitae | ${SITE_CONFIG.shortName} (${SITE_CONFIG.username})`,
     description: `Front-End Developer specializing in modern web interfaces and application experiences.`,
-    images: [getOgImageUrl('/og-image.png')],
+    images: [getOgImageUrl('/og-image.svg')],
     creator: `@${SITE_CONFIG.username}`,
   },
 };

@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: getOgImageUrl('/og-image.png'),
-        secureUrl: getOgImageUrl('/og-image.png'),
+        url: getOgImageUrl('/og-image.svg'),
+        secureUrl: getOgImageUrl('/og-image.svg'),
         width: 1200,
         height: 630,
         type: 'image/png',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${SITE_CONFIG.fullName} (@${SITE_CONFIG.username}) | Front-End Developer`,
     description: SITE_CONFIG.description,
-    images: [getOgImageUrl('/og-image.png')],
+    images: [getOgImageUrl('/og-image.svg')],
     creator: `@${SITE_CONFIG.username}`,
     site: `@${SITE_CONFIG.username}`,
   },

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const canonicalUrl = getCanonicalUrl(`/blog/${post.id}`);
-  const imageUrl = getOgImageUrl('/og-image.png');
+  const imageUrl = getOgImageUrl('/og-image.svg');
 
   return {
     title: `${post.title} | ${SITE_CONFIG.shortName} Insights`,
@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     keywords: [
       post.title,
       post.category,
-      'Software Architecture',
-      'Engineering Insights',
+      'Front-End Development',
+      'React and Next.js',
       SITE_CONFIG.fullName,
       SITE_CONFIG.shortName,
       SITE_CONFIG.username,
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: '2025-01-15T00:00:00.000Z',
       modifiedTime: '2025-02-01T00:00:00.000Z',
       section: post.category,
-      tags: [post.category, 'Software Engineering', 'Architecture'],
+      tags: [post.category, 'Front-End Development', 'React and Next.js'],
       authors: [SITE_URL],
       images: [
         {
@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   }
 
   const canonicalUrl = getCanonicalUrl(`/blog/${post.id}`);
-  const imageUrl = getOgImageUrl('/og-image.png');
+  const imageUrl = getOgImageUrl('/og-image.svg');
 
   const blogJsonLd = {
     '@context': 'https://schema.org',
@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         },
         url: canonicalUrl,
         articleSection: post.category,
-        keywords: `${post.category}, Software Architecture, Engineering Insights`,
+        keywords: `${post.category}, Front-End Development, React, Next.js`,
       },
       generateBreadcrumbJsonLd([
         { name: 'Home', path: '/' },

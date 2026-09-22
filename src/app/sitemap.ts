@@ -26,17 +26,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
           'x-default': url,
         },
       },
-      images: [image ? (image.startsWith('http') ? image : getOgImageUrl(image)) : getOgImageUrl('/og-image.png')],
+      images: [image ? (image.startsWith('http') ? image : getOgImageUrl(image)) : getOgImageUrl('/og-image.svg')],
     };
   };
 
   const staticPages: MetadataRoute.Sitemap = [
     createEntry('', 1.0, 'weekly'),
     createEntry('/about', 0.9, 'monthly', '/profile.png'),
-    createEntry('/projects', 0.9, 'weekly', '/og-image.png'),
+    createEntry('/projects', 0.9, 'weekly', '/og-image.svg'),
     createEntry('/resume', 0.85, 'monthly', '/profile.png'),
-    createEntry('/blog', 0.85, 'weekly', '/og-image.png'),
-    createEntry('/contact', 0.8, 'monthly', '/og-image.png'),
+    createEntry('/blog', 0.85, 'weekly', '/og-image.svg'),
+    createEntry('/contact', 0.8, 'monthly', '/og-image.svg'),
   ];
 
   const caseStudyPages: MetadataRoute.Sitemap = CASE_STUDIES.map((study) => 
@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS_DATA.map((post) => 
-    createEntry(`/blog/${post.id}`, 0.8, 'monthly', '/og-image.png')
+    createEntry(`/blog/${post.id}`, 0.8, 'monthly', '/og-image.svg')
   );
 
   return [...staticPages, ...caseStudyPages, ...blogPages];

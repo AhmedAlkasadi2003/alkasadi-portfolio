@@ -240,7 +240,7 @@ export default function ProjectDetailClient({ slug }: { slug: string }) {
 
       {/* More Case Studies Footer */}
       <div className="max-w-7xl mx-auto px-6 mt-20 pt-12 border-t border-slate-200 dark:border-slate-800">
-        <h3 className="text-2xl font-bold font-display mb-8">Other Enterprise Case Studies</h3>
+        <h3 className="text-2xl font-bold font-display mb-8">Other Front-End Projects</h3>
         <div className="grid md:grid-cols-2 gap-8">
           {otherProjects.map((other) => (
             <Link 

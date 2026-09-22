@@ -1,7 +1,7 @@
 # Comprehensive SEO, Metadata, Entity Graph & Architectural Audit Report
 
 **Target Profile / Entity**: Ahmed Mahfoodh Alkasadi (`AhmedAlkasadi2003`)  
-**Deployment Target**: `https://ahmed-alkasadi-portfolio.vercel.app`  
+**Deployment Target**: Configure `NEXT_PUBLIC_SITE_URL` with Ahmed's production domain before deployment.
 **Application Architecture**: Next.js 16 (App Router), React 19, Tailwind CSS v4, Lucide Icons, Static Export (`output: "export"`)  
 **Audit Date**: September 2026  
 **Status**: **100% Production Ready & Validated**
@@ -67,14 +67,14 @@ export const SITE_CONFIG = {
 
 | Route | Page Type | Schema.org Type | Canonical URL | OG Type |
 |---|---|---|---|---|
-| `/` | Home / Portfolio | `Person`, `WebSite` | `https://ak01redwan-portfolio.vercel.app` | `website` |
-| `/about` | About & Bio | `ProfilePage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/about` | `profile` |
-| `/projects` | Case Studies | `CollectionPage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/projects` | `website` |
-| `/projects/[slug]` | Case Study Detail | `TechArticle`, `SoftwareSourceCode`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/projects/{slug}` | `article` |
-| `/blog` | Tech Blog | `Blog`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/blog` | `website` |
-| `/blog/[id]` | Blog Article | `BlogPosting`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/blog/{id}` | `article` |
-| `/resume` | CV & Credentials | `ProfilePage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/resume` | `profile` |
-| `/contact` | Consultation Channel | `ContactPage`, `BreadcrumbList` | `https://ak01redwan-portfolio.vercel.app/contact` | `website` |
+| `/` | Home / Portfolio | `Person`, `WebSite` | `NEXT_PUBLIC_SITE_URL` | `website` |
+| `/about` | About & Bio | `ProfilePage`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/about` | `profile` |
+| `/projects` | Front-End Projects | `CollectionPage`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/projects` | `website` |
+| `/projects/[slug]` | Front-End Project Detail | `TechArticle`, `SoftwareSourceCode`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/projects/{slug}` | `article` |
+| `/blog` | Front-End Notes | `Blog`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/blog` | `website` |
+| `/blog/[id]` | Front-End Article | `BlogPosting`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/blog/{id}` | `article` |
+| `/resume` | CV & Credentials | `ProfilePage`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/resume` | `profile` |
+| `/contact` | Contact Channel | `ContactPage`, `BreadcrumbList` | `NEXT_PUBLIC_SITE_URL/contact` | `website` |
 
 ---
 

@@ -22,7 +22,7 @@ export default function NotFound() {
       <p className="text-slate-600 dark:text-slate-400 max-w-lg mb-10 text-base sm:text-lg leading-relaxed">
         {isAr
           ? 'عذراً، الصفحة أو دراسة الحالة التي تبحث عنها غير متوفرة أو تم نقلها.'
-          : 'The page, engineering case study, or research publication you are looking for has been relocated or does not exist.'}
+          : 'The page or front-end project you are looking for does not exist.'}
       </p>
 
       {/* Quick Discovery Navigation Grid */}

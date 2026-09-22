@@ -81,7 +81,7 @@
     │   ├── Navbar.tsx            # Floating glassmorphic navigation bar
     │   ├── Footer.tsx            # Footer with social links & copyright
     │   ├── Hero.tsx              # Terminal-styled executive hero section
-    │   ├── HardwareDifferentiator.tsx # CNC & Hardware automation showcase
+    │   ├── HardwareDifferentiator.tsx # Front-end focus and stack showcase
     │   ├── Skills.tsx            # Categorized capability matrices
     │   ├── Projects.tsx          # Featured case studies showcase
     │   ├── ProjectsClient.tsx    # Filterable project gallery
@@ -151,10 +151,10 @@ Route (app)
 - `curl -I http://localhost:3000/` -> **200 OK**
 - `curl -I http://localhost:3000/about` -> **200 OK**
 - `curl -I http://localhost:3000/projects` -> **200 OK**
-- `curl -I http://localhost:3000/projects/bandwal-academy` -> **200 OK**
-- `curl -I http://localhost:3000/projects/cnc-machine-automation` -> **200 OK**
+- `curl -I http://localhost:3000/projects/itqanpro-system-corporate-platform` -> **200 OK**
+- `curl -I http://localhost:3000/projects/der3-education-dashboard` -> **200 OK**
 - `curl -I http://localhost:3000/blog` -> **200 OK**
-- `curl -I http://localhost:3000/blog/ci-cd-github-actions-automation` -> **200 OK**
+- `curl -I http://localhost:3000/resume` -> **200 OK**
 - `curl -I http://localhost:3000/contact` -> **200 OK**
 - `curl -I http://localhost:3000/resume` -> **200 OK**
 - `curl -I http://localhost:3000/site.webmanifest` -> **200 OK**

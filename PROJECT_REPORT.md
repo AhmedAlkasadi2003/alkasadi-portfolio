@@ -12,8 +12,8 @@
 This project is a polished personal portfolio, digital resume, and front-end case study showcase developed for **Ahmed Mahfoodh Alkasadi**, a Front-End Developer specializing in interactive, modern, and maintainable UI engineering. 
 
 The platform is designed to:
-1. **Demonstrate High-Level Technical Mastery**: Showcase 10+ years of software architecture, full-stack engineering, microservices orchestration, and cross-platform leadership (spanning C#, Java, Python, C++, Laravel, Nuxt.js, React, and Next.js).
-2. **Present Real-World Enterprise Deployments**: Highlight flagship case studies such as university CMS transformations, AI background removal engines, nopCommerce payment integrations, and distributed microservices architectures.
+1. **Present Verified Front-End Skills**: Showcase Ahmed's HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Redux, Node.js, Express, Git, and GitHub skills.
+2. **Present Verified Projects**: Highlight the ItqanPro, Basqat, Rakzoon, DER3, e-commerce, movies, and hotel reservation projects listed in Ahmed's CV.
 3. **Deliver an Elite User Experience**: Provide smooth inertial scrolling (Lenis), Framer Motion entry and viewport animations, keyboard-driven navigation (`cmdk` Command Palette with `⌘K` / `Ctrl+K`), and a dual-theme system (Dark/Light).
 4. **Offer Native Bilingual Support (English & Arabic)**: Implement full right-to-left (RTL) and left-to-right (LTR) bidirectional localization with automated font switching (`Space Grotesk` / `Inter` for Latin scripts and `IBM Plex Sans Arabic` for Arabic script).
 5. **Live Integrations & Dynamic Data**: Dynamically query and display live public open-source activity using the GitHub REST API.

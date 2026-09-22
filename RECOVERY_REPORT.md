@@ -101,10 +101,10 @@ Route (app)
 - `GET /` -> **HTTP 200 OK** (Rendered HTML with complete OpenGraph & JSON-LD)
 - `GET /about` -> **HTTP 200 OK**
 - `GET /projects` -> **HTTP 200 OK**
-- `GET /projects/bandwal-academy` -> **HTTP 200 OK**
-- `GET /projects/cnc-machine-automation` -> **HTTP 200 OK**
+- `GET /projects/itqanpro-system-corporate-platform` -> **HTTP 200 OK**
+- `GET /projects/der3-education-dashboard` -> **HTTP 200 OK**
 - `GET /blog` -> **HTTP 200 OK**
-- `GET /blog/ci-cd-github-actions-automation` -> **HTTP 200 OK**
+- `GET /resume` -> **HTTP 200 OK**
 - `GET /contact` -> **HTTP 200 OK**
 - `GET /resume` -> **HTTP 200 OK**
 - `GET /site.webmanifest` -> **HTTP 200 OK**

@@ -55,11 +55,11 @@
     <!-- Badge 1: Software -->
     <rect width="180" height="42" rx="21" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
     <circle cx="25" cy="21" r="6" fill="#10b981" />
-    <text x="42" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">FULL-STACK LEAD</text>
+    <text x="42" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">FRONT-END DEVELOPER</text>
 
     <!-- Badge 2: Hardware -->
     <rect x="200" width="180" height="42" rx="21" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
     <circle cx="225" cy="21" r="6" fill="#38bdf8" />
-    <text x="242" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">CNC &amp; HARDWARE</text>
+    <text x="242" y="26" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#f8fafc">REACT • NEXT.JS</text>
   </g>
 </svg>

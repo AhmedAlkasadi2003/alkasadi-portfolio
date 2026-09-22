@@ -98,7 +98,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
       {
         '@type': 'TechArticle',
         '@id': `${canonicalUrl}#article`,
-        headline: `${study.title} — Enterprise Engineering Case Study`,
+        headline: `${study.title} — Front-End Project`,
         description: study.summary,
         image: [imageUrl],
         url: canonicalUrl,

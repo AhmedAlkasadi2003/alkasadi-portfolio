@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: getOgImageUrl('/og-image.png'),
+        url: getOgImageUrl('/og-image.svg'),
         width: 1200,
         height: 630,
         alt: `${SITE_CONFIG.fullName} (${SITE_CONFIG.username}) — Front-End Developer`,
